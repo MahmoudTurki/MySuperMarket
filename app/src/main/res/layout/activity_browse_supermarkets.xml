@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pentavalue.tomato.ui.activities.BrowseSupermarketsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/topBarLyt"
+            layout="@layout/top_bar_browse_supermarket"></include>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_30"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/set_your_location"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="@string/city"
+                    android:textSize="@dimen/mediumTextSize" />
+
+
+                <TextView
+                    android:id="@+id/cityTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:drawableEnd="@drawable/shopping_select"
+                    android:gravity="center_vertical"
+                    android:text="@string/cairo"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/mediumTextSize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:background="@color/colorLightGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="@string/area"
+                    android:textSize="@dimen/mediumTextSize" />
+
+
+                <TextView
+                    android:id="@+id/areaTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:drawableEnd="@drawable/shopping_select"
+                    android:gravity="center_vertical"
+                    android:text="@string/maadi"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/mediumTextSize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2"
+                    android:background="@color/colorLightGray" />
+
+                <TextView
+                    android:id="@+id/showSupermarketsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/shopping_btn"
+                    android:gravity="center"
+                    android:text="@string/show_supermarkets"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/mediumTextSize" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fpFrameLyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent">
+
+        <include layout="@layout/floating_action_menu"></include>
+    </FrameLayout>
+</FrameLayout>

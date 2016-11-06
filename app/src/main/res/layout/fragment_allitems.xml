@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.AllItemsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/item_search_bar"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:clipToPadding="false"
+        android:padding="@dimen/padding_5" />
+
+    <TextView
+        android:id="@+id/initialFrameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_5"
+        android:drawableTop="@drawable/shopping_search_place_holder"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_5"
+        android:text="@string/search_quote"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:id="@+id/noItemTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_5"
+        android:drawableTop="@drawable/shopping_search_place_holder"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/padding_5"
+        android:text="@string/no_item"
+        android:textSize="@dimen/mediumTextSize" />
+
+
+</LinearLayout>

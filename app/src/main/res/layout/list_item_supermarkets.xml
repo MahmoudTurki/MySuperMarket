@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/targetLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_3"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20">
+
+    <include layout="@layout/supermarket_first_row"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_margin="@dimen/margin_3"
+        android:background="@color/colorLightWhite"
+        android:padding="@dimen/padding_5" />
+
+    <include layout="@layout/supermarket_second_row"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:layout_margin="@dimen/margin_3"
+        android:background="@color/colorLightWhite"
+        android:padding="@dimen/padding_5" />
+
+    <include layout="@layout/supermarket_third_row"></include>
+
+</LinearLayout>

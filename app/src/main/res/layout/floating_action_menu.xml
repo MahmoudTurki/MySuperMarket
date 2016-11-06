@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fpFrameLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin">
+
+    <!--First button as menu button-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shopping_menu"
+        fab:backgroundTint="@color/colorDarkRed"
+        fab:borderWidth="0dp"
+        fab:elevation="0dp"
+        fab:fabSize="normal"
+        fab:rippleColor="@color/colorDarkRed" />
+
+    <RelativeLayout
+        android:id="@+id/floatingBtnRLyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabBtn"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/shoppingMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/shopping"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/shoppingMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/shopping"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_shopping"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shoppingMenuLyt"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/profile"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/profileMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_profile"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+        <!-- Other button as menu items-->
+        <LinearLayout
+            android:id="@+id/notificationMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profileMenuLyt"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/notifications"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/notificationMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_notification"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutUsMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/notificationMenuLyt"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/about_us"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/aboutUsMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_aboutus"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactUsMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/aboutUsMenuLyt"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/contact_us"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/contactUsMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_contactus"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeMenuLyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contactUsMenuLyt"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:text="@string/home"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/homeMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:src="@drawable/appmenu_home"
+                fab:backgroundTint="@color/fbColorGreen"
+                fab:elevation="0dp"
+                fab:fabSize="mini" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

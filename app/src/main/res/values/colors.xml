@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b488</color>
+    <color name="colorPrimaryDark">#009974</color>
+    <color name="colorAccent">#707070</color>
+
+    <!--Color schema-->
+    <color name="colorDarkRed">#C91B39</color>
+    <color name="colorLightRed">#e72343</color>
+    <color name="colorDarkGreen">#009974</color>
+    <color name="colorLightGreen">#00b488</color>
+    <!--Text color-->
+    <color name="colorDarkGray">#393939</color>
+    <color name="colorLightGray">#707070</color>
+    <!--Errot Text color-->
+    <color name="colorLightYellow">#FFCC00</color>
+    <!--Background color-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightWhite">#f0f0f0</color>
+
+    <color name="colorBlack">#000000</color>
+
+
+    <color name="fbColorGreen">#009688</color>
+    <color name="opacityWhite">#73FFFFFF</color>
+    <!--
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00-->
+</resources>

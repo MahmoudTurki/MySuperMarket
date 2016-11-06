@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:orientation="vertical">
+
+    <com.pentavalue.tomato.ui.custom.FloatingActionMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <!--First button as menu button-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shopping_menu"
+            fab:backgroundTint="@android:color/holo_red_light"
+            fab:fabSize="normal" />
+
+
+        <!-- Other button as menu items-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/shoppingMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/shopping"
+            android:src="@drawable/appmenu_shopping"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/profileMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/appmenu_profile"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+        <!-- Other button as menu items-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/notificationMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/notifications"
+            android:src="@drawable/appmenu_notification"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/aboutUsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/about_us"
+            android:src="@drawable/appmenu_aboutus"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/contactUsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/contact_us"
+            android:src="@drawable/appmenu_contactus"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/homeMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/home"
+            android:src="@drawable/appmenu_home"
+            fab:backgroundTint="@color/colorLightGreen"
+            fab:fabSize="mini" />
+    </com.pentavalue.tomato.ui.custom.FloatingActionMenu>
+
+</RelativeLayout>

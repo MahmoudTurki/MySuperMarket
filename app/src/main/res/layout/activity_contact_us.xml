@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pentavalue.tomato.ui.activities.ContactUsActivity">
+
+    <include
+        android:id="@+id/topBarLyt"
+        layout="@layout/top_bar_login"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_30"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_5">
+
+        <TextView
+            android:id="@+id/callTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableStart="@drawable/contactus_phone"
+            android:padding="@dimen/padding_5"
+            android:text="@string/_01002597935"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/mediumTextSize" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorLightGray"
+            android:padding="@dimen/padding_5" />
+
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableStart="@drawable/contactus_info"
+            android:padding="@dimen/padding_5"
+            android:text="@string/info_tomato_com"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorLightGray"
+            android:padding="@dimen/padding_5" />
+
+
+        <TextView
+            android:id="@+id/websiteTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableStart="@drawable/contactus_web"
+            android:padding="@dimen/padding_5"
+            android:text="@string/www_tomatogroceries_com"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorLightGray"
+            android:padding="@dimen/padding_5" />
+
+
+        <TextView
+            android:id="@+id/facebookTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableStart="@drawable/contactus_facbook"
+            android:padding="@dimen/padding_5"
+            android:text="@string/visit_our_facebook_page"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorLightGray"
+            android:padding="@dimen/padding_5" />
+    </LinearLayout>
+</LinearLayout>

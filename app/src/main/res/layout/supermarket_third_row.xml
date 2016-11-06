@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3"
+                android:padding="@dimen/padding_5"
+                android:text="@string/deals"
+                android:textSize="@dimen/smallestTextSize" />
+
+            <TextView
+                android:id="@+id/dealsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3"
+                android:padding="@dimen/padding_5"
+                android:text="15"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/smallestTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3"
+                android:padding="@dimen/padding_5"
+                android:text="@string/new_arrivals"
+                android:textSize="@dimen/smallestTextSize" />
+
+            <TextView
+                android:id="@+id/newArrivalsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3"
+                android:padding="@dimen/padding_5"
+                android:text="8"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/smallestTextSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

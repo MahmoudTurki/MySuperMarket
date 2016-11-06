@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="windowActionModeOverlay">true</item><!--
+       android:windowSoftInputMode="stateHidden" <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>-->
+
+    </style>
+
+    <style name="AppThemeNoActionBarSolidStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.TextViewStyleTitleWhite" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/largestTextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleHeadLineWhite" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/largeTextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleNormalWhite" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleTitleGray" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/largestTextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleHeadLineGray" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/largeTextSize</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleNormalGray" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorLightGray</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleTitleGreen" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorLightGreen</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/largestTextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleHeadLineGreen" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorLightGreen</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/largeTextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleNormalGreen" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorLightGreen</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:padding">@dimen/padding_5</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--Error label text style-->
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorLightYellow</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="android:typeface">monospace</item>
+        <item name="colorControlActivated">@color/colorDarkGray</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="android:Widget.DeviceDefault.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">@dimen/rate_bar_min_width</item>
+        <item name="android:maxHeight">@dimen/rate_bar_min_height</item>
+    </style>
+
+    <style name="CustomTabText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+</resources>

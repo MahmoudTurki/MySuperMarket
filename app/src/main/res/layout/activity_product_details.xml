@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pentavalue.tomato.ui.activities.ProductDetails">
+
+    <include
+        android:id="@+id/topBarLyt"
+        layout="@layout/top_bar_product"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBarLyt">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/itemLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10">
+
+                <ImageView
+                    android:id="@+id/itemImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/itemTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:padding="@dimen/padding_5"
+                    android:text="Milk Brand"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/largestTextSize"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itemAmountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/padding_5"
+                        android:text="@string/kg"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/smallestTextSize" />
+
+                    <ImageView
+                        android:id="@+id/favouriteImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/favorites_remove" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemPriceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemLyt"
+                android:background="@color/colorLightWhite"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="2 AED"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/mediumTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemDescTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemPriceTxt"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="@string/test"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/mediumTextSize" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLightWhite"
+        android:padding="@dimen/padding_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="start|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:text="@string/quantity"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <include layout="@layout/item_amount"></include>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addToCartImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/product_details_addtocart" />
+    </FrameLayout>
+</RelativeLayout>

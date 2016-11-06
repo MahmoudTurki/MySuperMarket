@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGreen">
+
+        <TextView
+            android:id="@+id/totalPriceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_20"
+            android:text="55 AED"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/totalPriceTxt"
+            android:padding="@dimen/padding_5"
+            android:text="@string/total_price"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mediumTextSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/paymentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_payment" />
+
+        <TextView
+            android:id="@+id/paymentMethodTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/paymentIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/payment_method"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/paymentValueTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paymentMethodTxt"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/paymentIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/cash_on_delivery"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorLightGreen"
+            android:textSize="@dimen/smallestTextSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/shippingIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_my_addresses" />
+
+        <TextView
+            android:id="@+id/shippingAddressTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/shippingIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/shipping_address"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/shippingAddressValueTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippingAddressTxt"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/shippingIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/address_2_title"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorLightGreen"
+            android:textSize="@dimen/smallestTextSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/deliveryIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_delevery_time" />
+
+        <TextView
+            android:id="@+id/deliveryTimeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/deliveryIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/delivery_time"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/deliveryTimeValueTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deliveryTimeTxt"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_toEndOf="@+id/deliveryIcon"
+            android:padding="@dimen/padding_5"
+            android:text="@string/now"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorLightGreen"
+            android:textSize="@dimen/smallestTextSize" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorLightGreen"
+        android:padding="@dimen/padding_20"
+        android:text="@string/shopping_list"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mediumTextSize" />
+</LinearLayout>

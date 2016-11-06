@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DeliveryAddressActivity">
+
+    <include
+        android:id="@+id/topBarLyt"
+        layout="@layout/top_bar_two"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBarLyt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_5">
+
+            <EditText
+                android:id="@+id/shippingAddressNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/shipping_address_name"
+                android:inputType="text"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/address_type"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/mediumTextSize" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioApartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        android:button="@drawable/radio_button_selector"
+                        android:checked="true"
+                        android:text="@string/apartment"
+                        android:textSize="@dimen/mediumTextSize" />
+
+                    <RadioButton
+                        android:id="@+id/radioHouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        android:button="@drawable/radio_button_selector"
+                        android:text="@string/house"
+                        android:textSize="@dimen/mediumTextSize" />
+
+                    <RadioButton
+                        android:id="@+id/radioOffice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        android:button="@drawable/radio_button_selector"
+                        android:text="@string/office"
+                        android:textSize="@dimen/mediumTextSize" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/blockNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/block_number"
+                android:inputType="number"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <EditText
+                android:id="@+id/streetNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/street_name"
+                android:inputType="text"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <EditText
+                android:id="@+id/buildingNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/building_number"
+                android:inputType="number"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <EditText
+                android:id="@+id/floorET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/floor"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <EditText
+                android:id="@+id/apartmentNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/apartment_number"
+                android:inputType="number"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <EditText
+                android:id="@+id/extraDirectionET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:hint="@string/extra_direction"
+                android:inputType="text"
+                android:maxLines="3"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:layout_margin="@dimen/margin_20"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDarkRed"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_15">
+
+        <TextView
+            android:id="@+id/signUpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/login_btn"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+</RelativeLayout>

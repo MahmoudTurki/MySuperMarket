@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "524887308152",
+    "project_id": "tomato-d26b7"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524887308152:android:b3a07fc00f5bbbaf",
+        "android_client_info": {
+          "package_name": "com.pentavalue.mysupermarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCav0Yazk7M0ytrPU8J0r6rir2Mi1uU97I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/targetLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/orderStatusTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_weight="3"
+            android:drawableTop="@drawable/myorder_deliverd"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:text="@string/delivered"
+            android:textColor="@color/colorLightGreen"
+            android:textSize="@dimen/smallTextSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/orderNumberTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/order_number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderNumberValueTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_toEndOf="@+id/orderNumberTxt"
+                    android:paddingStart="@dimen/padding_20"
+                    android:text="12"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/mediumTextSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:id="@+id/deliveryTimeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/order_delivery_time"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/smallestTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderDeliveryTimeValueTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="Monday 4:51pm"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/smallestTextSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/order_number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/smallestTextSize"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/orderTotalPriceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="AED"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="@dimen/smallestTextSize" />
+
+                <TextView
+                    android:id="@+id/orderTotalPriceValueTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/orderTotalPriceTxt"
+                    android:text="12"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/smallestTextSize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

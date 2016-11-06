@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ScanBarcodeFragment">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/shopping_scan_barcode" />
+
+    <TextView
+        android:id="@+id/openCameraTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/shopping_scan_btn"
+        android:gravity="center"
+        android:text="@string/open_camera"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mediumTextSize" />
+
+</LinearLayout>

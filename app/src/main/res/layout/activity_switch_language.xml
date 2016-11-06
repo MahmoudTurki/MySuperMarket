@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lang_bg"
+    tools:context=".ui.activities.SwitchLanguageActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/splash_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_5">
+
+        <TextView
+            android:id="@+id/arabicTxt"
+            style="@style/AppTheme.TextViewStyleNormalWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lang_lang_btn"
+            android:gravity="center"
+            android:text="@string/arabic"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/englishTxt"
+            style="@style/AppTheme.TextViewStyleNormalWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lang_lang_btn"
+            android:gravity="center"
+            android:text="@string/english"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</RelativeLayout>
